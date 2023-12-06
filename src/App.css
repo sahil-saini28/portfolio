@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+/* CSS for the glowing effect */
+.glowing {
+  animation: glowingAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes glowingAnimation {
+  0% {
+    box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  50% {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+}

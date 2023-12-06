@@ -4,46 +4,55 @@ import Sahilpng from "./Images/sahilphoto.png";
 import github from "./Images/Github.png";
 import Linkedin from "./Images/Linkedin.png";
 import Note from "./Images/NoteSuit.jpeg";
+import CV from "./Images/SAHIL_CV.pdf"
 const Home = () => {
   return (
     <div>
-      <div className="hero  glass  min-h-screen bg-base-200">
+      
+      <div  name="section1" className="  glass  min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={Sahilpng}
             alt="im"
-            className="ease-linear  transform hover:scale-125 transition duration-500  px-6 py-2 m-6 inline max-w-sm rounded-lg shadow-2xl"
+            className="ease-linear  transform hover:scale-125 transition duration-500  px-6 py-2 m-6 inline max-w-sm rounded-lg shadow-2xl sm:h-1/2"
           />
           <div>
-            <h1 className="text-5xl font-bold">
+            <div className="sm:word-wrap" >
+            <h1 className="text-4xl font-bold">
               
               Front-End Back-End Developer
             </h1>
-            <p className="py-6 font-extrabold ">
-              <h1> Hi, i'am Sahil 👋 </h1>
+            <p className="py-6 font-extrabold  ">
+              <h1> Hi, i'am <h1 className="text-5xl font-bold">
+              
+              SAHIL
+            </h1> 👋 </h1>
               Welcome to a world where design meets functionality, weaving
               seamless user experiences in the front end while engineering
               robust solutions in the back end – a fusion of creativity and
               technical prowess encapsulated in my portfolio.
             </p>
+            </div>
             <div className="flex justify-start">
+              <a rel="noopener noreferrer" href={CV} target="_blank" > 
               <button className="btn flex btn-primary">Get my CV</button>
-              <img
-                className=" mx-5 rounded-lg max-h-full"
+
+              </a>
+              <a href="https://github.com/sahil-saini28"    ><img
+                className=" btn mx-5 rounded-lg max-h-full"
                 alt="/"
                 src={github}
-              ></img>
-              <img
-                className="  rounded-lg max-h-full"
+              ></img></a>
+              <a href="https://www.linkedin.com/in/sahilsaini28" ><img
+                className=" btn  rounded-lg max-h-full"
                 alt="/"
                 src={Linkedin}
-              ></img>
+              ></img></a>
             </div>
           </div>
         </div>
       </div>
-
-      <div className=" grid  place-items-center">
+      <div name="section2" className=" grid  place-items-center">
         <div className="card my-6 w-2/3 bg-base-100 shadow-xl">
           <div className="card-body min-w-full ">
             <h2 className="card-title ">About ME!</h2>
@@ -61,13 +70,15 @@ const Home = () => {
         In March 2022, I embraced a transformative journey into Full Stack Web Development. This transition symbolized my determination, resilience, and unwavering commitment to growth.
       </p>
       <p className="text-lg">
-        Graduating amidst the challenges of the pandemic in July 2020, I initially pursued government job opportunities without success. However, this setback inspired a pivotal shift in my career path.
+        Graduating in B.Tech amidst the challenges of the pandemic in July 2020, I initially pursued govt.Tech job opportunities without success. However, this setback inspired a pivotal shift in my career path.
       </p>
     </div>
           </div>
         </div>
       </div>
-      <div className="my-6">
+      <div>  <h1 className="text-5xl p-4 flex justify-center font-bold">  Projects </h1></div>
+
+      {/* <div className="my-6">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
@@ -84,11 +95,10 @@ const Home = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-start md:text-end mb-10">
+            <div name="section2" className="timeline-start md:text-end mb-10">
               <div className="text-4xl text-start mx-8">Projects</div>
               <time className="font-mono italic">September 2023</time>
               <div className="text-lg font-black">Notes App</div>
-{/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */}
               <div className="card card-side bg-base-100 shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title">
@@ -175,7 +185,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              {/* //---------------------------------------------------------------------------------------------------------------------------------------------note */}
+              
             </div>
             <hr />
           </li>
@@ -284,7 +294,7 @@ const Home = () => {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
