@@ -1,29 +1,35 @@
 import React from 'react'
 import news from "./Images/News.jpeg";
-import Sahilpng from "./Images/sahilphoto.png";
 import github from "./Images/Github.png";
-import Linkedin from "./Images/Linkedin.png";
 import Note from "./Images/NoteSuit.jpeg";
-
+import visit from "./Images/visit.png"
 const MainProject = () => {
   return (
     <>
-      <div  name="section4" className="  bg-base-200">
-      <h1 className="text-5xl p-4 font-bold"> NOTE SUIT - "Harmonize Your Notes"! </h1>
+      <div  name="section4" className=" pt-6 bg-base-200">
+      {/* <h1 className="text-5xl p-4 font-bold"> NOTE SUIT - "Harmonize Your Notes"! </h1> */}
   <div className=" flex justify-start sm:flex-col  lg:flex-row">
     <img 
     alt='/'
-     className=" rounded-xl h-1/2 w-1/2 p-4 inline-block  "
+     className="rounded-3xl h-1/2 w-1/2 p-4 inline-block  "
      src={Note} />
     <div className='flex-col  '>
-    <h1 className="text-4xl  p-4 font-bold"> MERN Full Stack Web Application with Login Feature</h1>
+    <h1 className="text-5xl p-4 font-bold  "> NOTE SUIT - <span className='text-gray-600 ' >"Harmonize Your Notes"!</span> </h1>
+    <h1 className="text-2xl  p-4 "> MERN Full Stack Web Application with Login Feature</h1>
       
-    <a href='https://notesuit.netlify.app/' >  <button className="btn btn-primary">Visit</button> </a>
+    <a href='https://notesuit.netlify.app/' target="_blank" rel="noopener noreferrer"><img 
+    alt='/'
+     className="btn bg-gray-100 ml-6  "
+     src={visit} /> Visit </a>
       <div className=" dropdown dropdown-top dropdown-end">
-  <div tabIndex={0} role="button" className="btn btn-primary m-1">Code</div>
+  <div tabIndex={0} role="button" className="
+    m-1 ml-6 ">  <img 
+    alt='/'
+     className="btn bg-gray-100  "
+     src={github} ></img> </div>
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-    <li><a href='https://github.com/sahil-saini28/Note-Suit-app' >Front-End </a></li>
-    <li><a href='https://github.com/sahil-saini28/Note-Suit-Backend'>Back-End</a></li>
+    <li><a  href='https://github.com/sahil-saini28/Note-Suit-app' target="_blank" rel="noopener noreferrer"  >Front-End </a></li>
+    <li><a href='https://github.com/sahil-saini28/Note-Suit-Backend' target="_blank" rel="noopener noreferrer" >Back-End</a></li>
   </ul>
 </div>
     </div>
@@ -59,22 +65,27 @@ const MainProject = () => {
 
 
 
-<div className="  bg-base-200">
-      <h1 className="text-5xl p-4 font-bold"> News App -"Your Daily News Blend!"
-</h1>
+<div className=" pt-4 bg-base-200">
   <div className=" flex justify-start lg:flex-row">
    
     <div className='flex-col  '>
-    <h1 className="text-4xl p-4 font-bold"> A NEWS app that fetches real-time news from a pre-existing API.</h1>
+      <h1 className="text-5xl p-4 font-bold"> News App -"Your Daily News Blend!"</h1>
       <div className='fles ' >
-      <a href='https://sahil-saini28.github.io/Media-string-/'><button className=" justify-items-end mx-5 btn btn-primary">Visit</button></a>
-      <a href='https://github.com/sahil-saini28/Media-string-.git' ><button className="justify-items-end btn btn-primary">Code</button></a>
+    <h1 className="text-2xl p-4 "> A NEWS app that fetches real-time news from a pre-existing API.</h1>
+      <a href='https://sahil-saini28.github.io/Media-string-/' target="_blank" rel="noopener noreferrer"  ><img 
+    alt='/'
+     className="btn bg-gray-100 ml-10 mt-10  "
+     src={visit} /></a>
+      <a href='https://github.com/sahil-saini28/Media-string-.git' target="_blank" rel="noopener noreferrer"  ><img 
+    alt='/'
+     className="btn bg-gray-100  ml-10 mt-10 "
+     src={github} /></a>
 
     </div>
     </div>
     <img 
     alt='/'
-     className=" rounded-xl h-1/4 w-1/2 p-4 inline-block  "
+     className=" rounded-xl h-2/6 w-1/2 p-4 inline-block  "
      src={news} />
   </div>
   <div className=' p-5'>

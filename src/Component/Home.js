@@ -1,15 +1,14 @@
 import React from "react";
-import news from "./Images/News.jpeg";
+
 import Sahilpng from "./Images/sahilphoto.png";
 import github from "./Images/Github.png";
 import Linkedin from "./Images/Linkedin.png";
-import Note from "./Images/NoteSuit.jpeg";
 import CV from "./Images/SAHIL_CV.pdf"
 const Home = () => {
   return (
     <div>
       
-      <div  name="section1" className="  glass  min-h-screen bg-base-200">
+      <div  name="section1" className="  glass  bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={Sahilpng}
@@ -20,9 +19,9 @@ const Home = () => {
             <div className="sm:word-wrap" >
             <h1 className="text-4xl font-bold">
               
-              Front-End Back-End Developer
+              Full Stack Web Developer!
             </h1>
-            <p className="py-6 font-extrabold  ">
+            <p className="py-6  ">
               <h1> Hi, i'am <h1 className="text-5xl font-bold">
               
               SAHIL
@@ -38,12 +37,12 @@ const Home = () => {
               <button className="btn flex btn-primary">Get my CV</button>
 
               </a>
-              <a href="https://github.com/sahil-saini28"    ><img
+              <a href="https://github.com/sahil-saini28"   target="_blank" rel="noopener noreferrer"  ><img
                 className=" btn mx-5 rounded-lg max-h-full"
                 alt="/"
                 src={github}
               ></img></a>
-              <a href="https://www.linkedin.com/in/sahilsaini28" ><img
+              <a href="https://www.linkedin.com/in/sahilsaini28" target="_blank" rel="noopener noreferrer" ><img
                 className=" btn  rounded-lg max-h-full"
                 alt="/"
                 src={Linkedin}

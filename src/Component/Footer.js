@@ -61,12 +61,12 @@ const Footer = () => {
               <button className="btn flex btn-primary">Get my CV</button>
 
               </a> */}
-              <a href="https://github.com/sahil-saini28"    ><img
+              <a href="https://github.com/sahil-saini28"  target="_blank" rel="noopener noreferrer"   ><img
                 className=" btn mx-5 rounded-lg max-h-full"
                 alt="/"
                 src={github}
               ></img></a>
-              <a href="https://www.linkedin.com/in/sahilsaini28" ><img
+              <a href="https://www.linkedin.com/in/sahilsaini28" target="_blank" rel="noopener noreferrer" ><img
                 className=" btn  rounded-lg max-h-full"
                 alt="/"
                 src={Linkedin}

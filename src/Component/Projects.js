@@ -11,7 +11,7 @@ const Projects = () => {
     <h2 className="card-title">TextUtils App</h2>
     <p>A React.js frontend application for text manipulation, featuring various functions like changing text case, removing extra spaces, and offering an intuitive user interface with responsive design using React components and Tailwind CSS.</p>
     <div className="card-actions justify-end">
-     <a href='https://github.com/sahil-saini28/Text-utils.git' > <button className="btn btn-primary">Code</button></a>
+     <a href='https://github.com/sahil-saini28/Text-utils.git' target="_blank" rel="noopener noreferrer"  > <button className="btn btn-primary">Code</button></a>
     </div>
   </div>
 </div>
@@ -20,7 +20,7 @@ const Projects = () => {
     <h2 className="card-title">Currency Converter Using Api</h2>
     <p> A dynamic web application built with API integration allowing users to perform real-time conversion between various currencies, offering ease of use and accurate exchange rates fetched from an external API source."</p>
     <div className="card-actions justify-end">
-    <a href='https://github.com/sahil-saini28/pass.git'>  <button className="btn btn-primary">Code</button></a>
+    <a  href='https://github.com/sahil-saini28/pass.git' target="_blank" rel="noopener noreferrer"  >  <button className="btn btn-primary">Code</button></a>
     </div>
   </div>
 </div>

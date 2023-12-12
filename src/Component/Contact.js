@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const ContactForm = () => {
-  const notify = () => toast("Wow so easy!");
+
   
     
 const addNote = async(title, description, tag) => {
-   toast(" awsome idiot!");
+   toast("Thank you for reaching out!");
   const response = await fetch(`https://note-suit.onrender.com/api/notes/addnotes`, {
     method: 'POST',
     headers: {
@@ -15,7 +15,7 @@ const addNote = async(title, description, tag) => {
     },
     body: JSON.stringify({ title, description, tag })
   });
-  toast(" manja mkha !");
+  toast("Noted!");
    
 
 };

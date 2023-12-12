@@ -3,7 +3,7 @@ import React from 'react'
 import UserContext from '../Context/UserContext';
 import { useContext } from 'react';
 
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import {   scroller } from 'react-scroll';
 
 const Navbar = () => {
  
@@ -35,7 +35,7 @@ const Navbar = () => {
      <div className="navbar  rounded-box justify-end  bg-base-100">
       
   <div className="flex p-100  ">
-  <ul className="menu menu-horizontal bg-base-200 rounded-box ">
+  <ul className="menu menu-horizontal bg-gray-100 rounded-box ">
   <li>
     <div  onClick={() => scrollToElement('section1')} className="tooltip tooltip-bottom" data-tip="Home">
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
